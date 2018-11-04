@@ -2,7 +2,7 @@
 Tutorials de ROS
 
 
-## 2: Sistema de fitxers de ROS
+# 2: Sistema de fitxers de ROS
 
 En aquest tutorial se'ns presenten algunes funcions útils per tal d'accedir a paquets de ROS de manera senzilla; aquestes funcions es troben dins del paquet de **rosbash** , on trobem multitud de funcions per facilitar l'ús de ROS.
 
@@ -19,7 +19,7 @@ Per tal d'accedir a informació sobre el paquet, es pot executar directament la 
 Una altra utilitat que ens ensenya és que amb el tabulador es pot escriure d'una manera més eficient per tal de no haver d'escriure noms llargs. En cas d'haver diverses opcions que comencin amb el mateix nom, es mostren en el terminal.
 
 
-### RESUM
+## RESUM
 
 Per tant, les funcions a tenir en compte per a un millor ús de ROS són les següents:
 
@@ -33,7 +33,7 @@ Altres utiltats d'aquest tutorial són:
 - El tabulador, per tal d'escriure més ràpid
 
 
-## 3: Creació d'un paquet amb ROS
+# 3: Creació d'un paquet amb ROS
 
 Aquest tutorial permet la creació de un primer paquet amb ROS.
 
