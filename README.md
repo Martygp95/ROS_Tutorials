@@ -111,7 +111,7 @@ Si tornem a executar *rosnode list* veurem que també apareix el *turtlesim*.
 
 ## RESUM
 
--Els nodes són executables que es troben a dins dels paquets i que poden comunicar, enviar missatges, proveir o utilitzar serveis i realitzar accions.
+- Els nodes són executables que es troben a dins dels paquets i que poden comunicar, enviar missatges, proveir o utilitzar serveis i realitzar accions.
 - L'entorn de ROS s'executa a partir de la comanda *roscore*; a partir d'aquí es treballa en un altre terminal
 - Es visualitzen els nodes actius amb la comanda *rosnode list*
 - Existeix un node anomenat *turtlesim* amb el qual es podràn fer proves
