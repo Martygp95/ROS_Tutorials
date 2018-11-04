@@ -33,3 +33,60 @@ Altres utiltats d'aquest tutorial són:
 - El tabulador, per tal d'escriure més ràpid
 
 
+## 3: Creació d'un paquet amb ROS
+
+Aquest tutorial permet la creació de un primer paquet amb ROS.
+
+Per tal de considerar un paquet de *catkin* com a tal, ha de complir els següents requisits:
+
+- Tenir un fitxer **package.xml** compatible amb *catkin*
+- Tenir un **CMakelists.txt** que utilitzi *catkin*
+- Tenir la seva pròpia carpeta
+
+Per aquests paquets es recomana utilitzar un espai de treball de *catkin*. Anteriorment en el primer tutorial ja hem creat aquest espai de treball de *catkin*, amb el qual també vam crear el *CMakelists.txt*. 
+
+Abans de continuar s'ha d'assegurar que aquest espai de treball té les carpetes de *build*, *devel* i *src* (es pot mirar amb la comanda *ls* dins del directori *catkin_ws*).
+
+Per tal de crear un paquet, ens posem a la carpeta *src*; es farà servir la comanda *catkin_create_pkg*, la qual seguirà la següent estructura:
+
+*catkin_create_pkg <package_name> [depend1] [depend2] [depend3]*
+
+En el qual hi posarem el nom del paquet a crear i les dependències de les quals dependrà el paquet.
+
+Dins del paquet *beginner_tutorials* observem que s'han creat els arxius *package.xml* i el *CMakelists.txt*.
+
+![alt_text](imatges/i3.png)
+
+Per tal de fer el un *build* al paquet, utilitzem la comanda *catkin_make*. Per tal d'afegir l'espai de treball l'entorn de ROS es fa servir la següent comanda:
+
+*. ~/catkin_ws/devel/setup.bash*
+
+Amb la comanda *rospack depends1 beginner_tutorials* podrem veure les dependències del paquet. Aquestes es troben guardades en el *package.xml*.
+
+![alt_text](imatges/i3.png)
+
+Aquestes són les dependències de primer ordre. Aquestes dependències poden tenir les seves pròpies dependències, la qual cos implica que seràn dependències indirectes del paquet. Es poden veure amb la comanda *rospack depends beginner_tutorials*.
+
+En el *package.xml* trobem diversos apartats:
+
+- Descripció del paquet (es troba entre les etiquetes *<description>*)
+- Mail del autor, usuari...
+- Llicència
+- Dependències
+
+## RESUM
+
+- S'ha de tenir en compte els requisits necessaris d'un paquet de *catkin* (fitxers *package.xml* , *CMakelists.txt* i directori)
+- S'ha de crear un entorn de *catkin* per tal de treballar amb aquests paquets
+- En el paquet tindrem dependències, les quals també tenen les seves pròpies dependències
+
+
+
+
+
+
+
+
+
+
+
