@@ -86,6 +86,39 @@ Al executar la comanda es veu que es creen les carpetes *build* i *devel*.
 
 ![alt_text](imatges/i5.png)
 
+# 5: Nodes de ROS
+
+Els nodes són executables que es troben a dins dels paquets de ROS. Aquests nodes es poden comunicar amb altres nodes, publicar missatges als topics, proveir un servei o fer-lo servir.
+
+Per tal de comunicar-se amb altres nodes, aquests utiliten llibreries, les quals permeten la comunicació entre paquets escrits en diferents llenguatges de programació, com per exemple la *rospy* (Phyton) o *roscpp* (C++).
+
+Per tal de començar a utilitzar el ROS, s'ha d'utilitzar primer la comanda *roscore*. A partir d'aquí s'ha de treballar en un altre terminal. 
+
+Si volem veure els nodes actius, podem utilitzar la comanda *rosnode* o la comanda *rosnode list*:
+
+![alt_text](imatges/i6.png)
+
+Com es pot veure, lúnic node funcionant en el moment és el *rosout*. Per tal d'obrir un node, es fa servir la comanda
+
+*rosrun [package_name] [node_name]*
+
+En aquest cas hem obert el node *turtlesim_node*:
+
+![alt_text](imatges/i7.png)
+
+Si tornem a executar *rosnode list* veurem que també apareix el *turtlesim*.
+
+
+## RESUM
+
+-Els nodes són executables que es troben a dins dels paquets i que poden comunicar, enviar missatges, proveir o utilitzar serveis i realitzar accions.
+- L'entorn de ROS s'executa a partir de la comanda *roscore*; a partir d'aquí es treballa en un altre terminal
+- Es visualitzen els nodes actius amb la comanda *rosnode list*
+- Existeix un node anomenat *turtlesim* amb el qual es podràn fer proves
+
+
+
+
 
 
 
