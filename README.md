@@ -14,7 +14,7 @@ Si es vol accedir directament al directori, es pot fer servir la comanda *roscd*
 
 Per tal d'accedir a informació sobre el paquet, es pot executar directament la comanda de *rosls* seguit del paquet del qual volem obtenir informació.
 
-![alt_text] (imatges/i2.png)
+![alt_text](imatges/i2.png)
 
 Una altra utilitat que ens ensenya és que amb el tabulador es pot escriure d'una manera més eficient per tal de no haver d'escriure noms llargs. En cas d'haver diverses opcions que comencin amb el mateix nom, es mostren en el terminal.
 
