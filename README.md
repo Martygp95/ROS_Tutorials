@@ -63,7 +63,7 @@ Per tal de fer el un *build* al paquet, utilitzem la comanda *catkin_make*. Per 
 
 Amb la comanda *rospack depends1 beginner_tutorials* podrem veure les dependències del paquet. Aquestes es troben guardades en el *package.xml*.
 
-![alt_text](imatges/i3.png)
+![alt_text](imatges/i4.png)
 
 Aquestes són les dependències de primer ordre. Aquestes dependències poden tenir les seves pròpies dependències, la qual cos implica que seràn dependències indirectes del paquet. Es poden veure amb la comanda *rospack depends beginner_tutorials*.
 
