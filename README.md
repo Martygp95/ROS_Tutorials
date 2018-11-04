@@ -45,8 +45,6 @@ Per tal de considerar un paquet de *catkin* com a tal, ha de complir els següen
 
 Per aquests paquets es recomana utilitzar un espai de treball de *catkin*. Anteriorment en el primer tutorial ja hem creat aquest espai de treball de *catkin*, amb el qual també vam crear el *CMakelists.txt*. 
 
-Abans de continuar s'ha d'assegurar que aquest espai de treball té les carpetes de *build*, *devel* i *src* (es pot mirar amb la comanda *ls* dins del directori *catkin_ws*).
-
 Per tal de crear un paquet, ens posem a la carpeta *src*; es farà servir la comanda *catkin_create_pkg*, la qual seguirà la següent estructura:
 
 *catkin_create_pkg <package_name> [depend1] [depend2] [depend3]*
@@ -80,6 +78,13 @@ En el *package.xml* trobem diversos apartats:
 - S'ha de crear un entorn de *catkin* per tal de treballar amb aquests paquets
 - En el paquet tindrem dependències, les quals també tenen les seves pròpies dependències
 
+# 4: Construcció d'un paquet amb ROS
+
+En el tutorial anterior ja s'ha realitzat; amb la comanda *catkin_make*; aquesta comanda és equivalent a totes les comandes del *cmake*, que es combinen en aquesta. Aquesta comanda construeix tots els paquets que es trobin en l'espai de treball de *catkin*. 
+
+Al executar la comanda es veu que es creen les carpetes *build* i *devel*.
+
+![alt_text](imatges/i5.png)
 
 
 
