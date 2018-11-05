@@ -165,8 +165,58 @@ Una eina útil per visualitzar les dades de manera gràfica és el plot, que s'e
 
 - Podem obtenir informació dels *topics* a partir de la eina *rostopic* i el seu conjunt de subcomandes
 - En els *topics* es publiquen els missatges que s'envien els nodes
-- El tipus de topic el determina el tipus de missatge que es publica
+- El tipus de topic el determina a partir del tipus de missatge que es publica
 - Els nodes estaran subscrits al *topic* o publicaràn en ell
+
+# 7: Serveis i paràmetres de ROS
+
+Un servei és una altra manera de comunicació entre nodes, fent servir la comunicació pregunta(request)-resposta(response). La comanda que permet utilitzar serveis s'anomena *rosservice*.
+
+El node turtlesim disposa de nou serveis. Aquests es poden veure a partir de la comanda *rosservice list*
+
+![alt_text](imatges/i15.png)
+
+Podem saber quin tipus de servei es tracta amb la comanda *rosservice type*. Per tal de cridar el servei simplement s'executa *rosservice call [servei]*. El servei */clear* permet netejar la pantalla del *turtlesim*.
+
+Un dels serveis de *turtlesim* permet afegir una nova tortuga en la finestra, en una posició determinada. Al contrari que el servei */clear*, que simplement neteja, aquest necessita arguments d'entrada per poder executar-se (en aquest cas la posició de la tortuga).
+
+![alt_text](imatges/i16.png)
+
+Només cal indicar la posició i angle, i la funció ens retornarà el nom assignat a la tortuga.
+
+Una altra comanda a utilitar és *rosparam*. Aquesta permet guardar i manipular les dades en el servidor de paràmetres de ROS. Podem veure que el turtlesim disposa de diversos paràmetres:
+
+![alt_text](imatges/i17.png)
+
+Amb la comanda *rosparam set [paràmetre]* podem canviar els valors dels paràmetres, seguit d'un /background_b
+*rosservice call /clear*, o obtenir el valor dels paràmetres amb la comanfa *rosparam get [paràmetre]*. Per exemple els paràmetres */background_r*, */background_g* i */background_b* controlen el color del fons de pantalla del *turtlesim*.
+
+També podem guardar dades d'aquests paràmetres en els fitxers .yaml amb les comandes *rosparam dump* i *rosparam load*.
+
+## RESUM
+
+- Els nodes es poden comunicar a través dels serveis; un node pot tenir una quantitat de serveis disponibles
+- Els serveis es podran manipular a partir de la comanda *rosservice*
+- Els nodes poden tenir paràmetres, que aquests es podràn modificar i guardar les seves dades a partir de la comanda *rosparam*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
