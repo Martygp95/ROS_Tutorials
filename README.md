@@ -116,10 +116,54 @@ Si tornem a executar *rosnode list* veurem que també apareix el *turtlesim*.
 - Es visualitzen els nodes actius amb la comanda *rosnode list*
 - Existeix un node anomenat *turtlesim* amb el qual es podràn fer proves
 
+# 6: Topics
+Per tal de veure el funcionament dels *topics*, es fa servir el *turtlesim*. En el primer moment, s'executa el node turtlesim; seguidament s'executa el node *turtle_teleop_key*, que permetrà moure la tortuga en diverses direccions. Totes aquestes comandes s'han d'executar en nodes diferents.
 
+Per tal de veure el que està passant entre els dos nodes, es pot executar la comanda 
 
+*rosrun rqt_graph rqt_graph*
 
+Apareixerà una pantalla com la següent.
 
+![alt_text](imatges/i8.png)
+
+Existeix una eina per tal d'obtenir informació dels *topics* de ROS: *rostopic*. Executant *rostopic -h* obtenim les subcomandes per a aquesta eina:
+
+![alt_text](imatges/i9.png)
+
+Observem que hi ha un gran número de comandes:
+
+- **Echo**: serveix per veure les dades que es publiquen en el *topic*. En aquest cas, volem veure les comande de velocitat de la tortuga. Per veure-ho només hem d'executar *rostopic echo /turtle1/cmd_vel* (actuem sobre el topic). Per tal de que funcioni, tots els nodes han de trobar-se executant (*turtlesim* i *turtle_telop_key*).
+
+Si tornem a executar el *rqt_graph* ens apareix de nou la gràfica, veurem que apareix el echo que fem amb la comanda de *rostopic*. S'en diu que el echo es troba suscrit al topic */turtle1/cmd_vel*.
+
+![alt_text](imatges/i10.png)
+
+- **Listt**:Retorna una llista dels *topics* que es troben subsrits i publicats en aquell moment. 
+
+![alt_text](imatges/i11.png)
+
+En funció del que executem ens ensenyarà els topics d'una manera o altra, o ens dirà x o y informació sobre els *topics*.
+
+![alt_text](imatges/i12.png)
+
+- **Type**: serveix per veure el tipus de *topic*, que es determina en funció dels missatges que s'envien per el *topic*. Veurem que el */turtle1/cmd_vel* és del tipus *geometry_msgs/Twist*. Amb la comanda *rosmsg show geometry_msgs/Twist* podem veure els detalls d'aquest tipus de missatge.
+
+-**Pub**: Permet publicar dades ens el topic. Executant
+
+*rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[2.0, 0.0, 0.0]' '[0.0, 0.0, 1.8]'*
+
+Podem enviar un missatge al turtlesim per tal de que es mogui amb les velocitats especificades. La subcomanda *-l* indica que el rostopic només publiqui una vegada.Si volem que la tortuga es segueixi movent, podem fer servir la subcomanda *-r*, amb la qual s'ha d'indicar la ràtio amb la qual volem que es mogui la tortuga en Hz.
+
+Executant la gràfica veurem que el *rostopic es troba publicant missatges al *topic*:
+
+![alt_text](imatges/i13.png)
+
+- **Hz**: informa de la ràtio a la qual es publiquen les dades.
+
+Una eina útil per visualitzar les dades de manera gràfica és el plot, que s'executa amb la comanda *rosrun rqt_plot rqt_plot*:
+
+![alt_text](imatges/i14.png)
 
 
 
