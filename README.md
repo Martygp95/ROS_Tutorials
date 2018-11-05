@@ -139,7 +139,7 @@ Si tornem a executar el *rqt_graph* ens apareix de nou la gràfica, veurem que a
 
 ![alt_text](imatges/i10.png)
 
-- **Listt**:Retorna una llista dels *topics* que es troben subsrits i publicats en aquell moment. 
+- **List**:Retorna una llista dels *topics* que es troben subsrits i publicats en aquell moment. 
 
 ![alt_text](imatges/i11.png)
 
@@ -149,7 +149,7 @@ En funció del que executem ens ensenyarà els topics d'una manera o altra, o en
 
 - **Type**: serveix per veure el tipus de *topic*, que es determina en funció dels missatges que s'envien per el *topic*. Veurem que el */turtle1/cmd_vel* és del tipus *geometry_msgs/Twist*. Amb la comanda *rosmsg show geometry_msgs/Twist* podem veure els detalls d'aquest tipus de missatge.
 
--**Pub**: Permet publicar dades ens el topic. Executant
+- **Pub**: Permet publicar dades ens el topic. Executant
 
 *rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[2.0, 0.0, 0.0]' '[0.0, 0.0, 1.8]'*
 
