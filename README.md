@@ -188,8 +188,7 @@ Una altra comanda a utilitar és *rosparam*. Aquesta permet guardar i manipular 
 
 ![alt_text](imatges/i17.png)
 
-Amb la comanda *rosparam set [paràmetre]* podem canviar els valors dels paràmetres, seguit d'un /background_b
-*rosservice call /clear*, o obtenir el valor dels paràmetres amb la comanfa *rosparam get [paràmetre]*. Per exemple els paràmetres */background_r*, */background_g* i */background_b* controlen el color del fons de pantalla del *turtlesim*.
+Amb la comanda *rosparam set [paràmetre]* podem canviar els valors dels paràmetres, seguit d'un *rosservice call /clear*, o obtenir el valor dels paràmetres amb la comanfa *rosparam get [paràmetre]*. Per exemple els paràmetres */background_r*, */background_g* i */background_b* controlen el color del fons de pantalla del *turtlesim*.
 
 També podem guardar dades d'aquests paràmetres en els fitxers .yaml amb les comandes *rosparam dump* i *rosparam load*.
 
