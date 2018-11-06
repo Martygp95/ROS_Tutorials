@@ -198,6 +198,20 @@ També podem guardar dades d'aquests paràmetres en els fitxers .yaml amb les co
 - Els serveis es podran manipular a partir de la comanda *rosservice*
 - Els nodes poden tenir paràmetres, que aquests es podràn modificar i guardar les seves dades a partir de la comanda *rosparam*
 
+# 10: Creació de msg i srv
+
+Els serveis i missatges són elements que es troben integrats en la comunicació en el ROS. Tindrem dos tipus d'arxius, els **msg** i els **srv**.
+
+- msg: són arxius de text que descriuen les característiques d'un missatge de ROS. Es guarden en el directori *msg* d'un paquet. Poden tenir tipus de variables o un tipus especial anomenat *header*.
+
+- srv: és un arxiu de servei. Es composa d'una pregunta i una resposta. Les dues parts es troben separades amb una línia de *--*. Es guarden en el directori *srv*.
+
+
+
+
+
+
+
 
 
 
