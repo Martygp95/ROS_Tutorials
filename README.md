@@ -206,10 +206,11 @@ Els serveis i missatges són elements que es troben integrats en la comunicació
 
 - srv: és un arxiu de servei. Es composa d'una pregunta i una resposta. Les dues parts es troben separades amb una línia de *--*. Es guarden en el directori *srv*.
 
+Per tal de generar missatges i serveis, s'han de modificar els arxius *package.xml* i *CMakelists.txt* tal i el com diu el tutorial.
 
+Algunes comandes noves que s'han fet servir són *roscp*, per copiar arxius a directoris, i *rosmsg*, per tal de mostrar informació sobre missatges.
 
-
-
+[a link](https://github.com/Martygp95/ROS_Tutorials/Arxius/package.xml)
 
 
 
