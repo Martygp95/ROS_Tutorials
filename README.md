@@ -210,7 +210,7 @@ Per tal de generar missatges i serveis, s'han de modificar els arxius *package.x
 
 Algunes comandes noves que s'han fet servir són *roscp*, per copiar arxius a directoris, i *rosmsg*, per tal de mostrar informació sobre missatges.
 
-[a link](https://github.com/Martygp95/ROS_Tutorials/Arxius/package.xml)
+[Package.xml](https://github.com/Martygp95/ROS_Tutorials/blob/master/Arxius/package.xml)
 
 
 
