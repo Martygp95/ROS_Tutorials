@@ -1,6 +1,10 @@
 # ROS_Tutorials
 Tutorials de ROS
 
+# 1: Instal·lació de ROS
+
+En aquest tutorial simplement s'han seguit els passos necessaris per tal de instal·lar el ROS en l'Ubuntu, així com crear un espai de treball de *catkin*.
+
 
 # 2: Sistema de fitxers de ROS
 
