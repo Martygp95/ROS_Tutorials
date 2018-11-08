@@ -210,13 +210,19 @@ Per tal de generar missatges i serveis, s'han de modificar els arxius [Package.x
 
 Algunes comandes noves que s'han fet servir són *roscp*, per copiar arxius a directoris, i *rosmsg*, per tal de mostrar informació sobre missatges.
 
+# 11: Escriure nodes subscribers and publishers
 
+Com hem dit anteriorment, existeixen nodes que publiquen en els topics, i d'altres que es subscriuen en els topics per tal de rebre missatges. En aquest tutorial s'ensenya com realitzar aquests nodes amb C++.
 
+Hi hauràn dos nodes, talker (el que publica) i listener (el que es troba subscrit). El topic es dirà *chatter*.
 
+![alt_text](imatges/i18.png)
 
+Les línies que van al ROS_Master indiquen que el node talker s'ha de registrar per tal de publicar al chatter, de la mateixa manera que s'ha de registrar el listener per tal de subscriure's al topic.
 
+Una de les coses remarcables del codi que ens presenten és la inclusió de la llibreria *ros/ros.h* per tal de utilitzar eines del sistema de ROS. Per generae els nodes simplement copiem els codis a dos arxius *.cpp*, [talker](https://github.com/Martygp95/ROS_Tutorials/blob/master/Arxius/talker.cpp) i [listener](https://github.com/Martygp95/ROS_Tutorials/blob/master/Arxius/listener.cpp).
 
-
+Aquests arxius *.cpp* inicialitzen el sistema de ROS, registren el node per tal de publicar/subscriure's. També en el cas del talker, es diu quin tipus de missatges s'enviaràn (std_msgs/String); en el cas del listener, es trobarà en espera de que arribin missatges. En el talker es poden canviar la ràtio de publicació de missatges.
 
 
 
